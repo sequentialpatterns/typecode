@@ -35,8 +35,6 @@ While the request to load the story data is pending, a "Loading" frame is displa
 
 ## Running the dev environment
 
-You can pick one of these options:
-
 * open the command line shell
 * install http-server [ npm install --global http-server ]
 * cd into the app directory
