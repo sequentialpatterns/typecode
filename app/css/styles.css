@@ -84,11 +84,12 @@
     }
     #container.staircase { height: 100%; }
     #container.staircase section {
-        height: 145%;
+        height: auto;
         margin-bottom: 20px;
     }
     #container.staircase a { bottom: -30px; }
     #container.staircase h1 { padding: 50px 0 20px; }
+    #container.staircase section #copy { padding-bottom: 40px; }
     #copy {
         grid-column-start: 2;
         grid-column-end: 12;
@@ -226,10 +227,12 @@
     }
     #container.staircase { height: 100%; }
     #container.staircase section {
-        height: 145%;
+        height: auto;
         margin-bottom: 20px;
     }
     #container.staircase a { bottom: -30px; }
+    #container.staircase h1 { padding: 50px 0 20px; }
+    #container.staircase section #copy { padding-bottom: 40px; }
     #copy {
         grid-column-start: 2;
         grid-column-end: 7;
@@ -368,10 +371,11 @@
     }
     #container.staircase { height: 100%; }
     #container.staircase section {
-        height: 125%;
+        height: auto;
         margin-bottom: 20px;
     }
     #container.staircase a { bottom: -20px; }
+    #container.staircase section #copy { padding-bottom: 40px; }
     #copy {
         grid-column-start: 2;
         grid-column-end: 7;
@@ -502,11 +506,12 @@
     }
     #container.staircase { height: 100%; }
     #container.staircase section {
-        height: 115%;
+        height: auto;
         margin-bottom: 20px;
     }
     #container.staircase h1 { padding: 100px 0 30px; }
     #container.staircase a { bottom: -15px; }
+    #container.staircase section #copy { padding-bottom: 40px; }
     #copy {
         grid-column-start: 2;
         grid-column-end: 7;
@@ -634,11 +639,12 @@
     }
     #container.staircase { height: 100%; }
     #container.staircase section {
-        height: 115%;
+        height: auto;
         margin-bottom: 20px;
     }
     #container.staircase h1 { padding: 100px 0 30px; }
     #container.staircase a { bottom: -30px; }
+    #container.staircase section #copy { padding-bottom: 40px; }
     #copy {
         grid-column-start: 2;
         grid-column-end: 7;
