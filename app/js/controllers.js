@@ -2,9 +2,20 @@
 /* Controllers */
 angular.module('myApp.controllers', []).
 controller('main', function( $scope, $http ){
-    $http.get( 'js/story.json' ).success( function( data ){
-        $scope.frames = data.frames;
-    });
+    $scope.loader = function( bool ){
+        if( bool )
+            $scope.colour = '#FFC100';
+            $scope.loading = bool;
+    }
+    $scope.loader( true );
+    $http.get( 'js/story.json' )
+        .success( function( data ){
+            $scope.frames = data.frames;
+            $scope.loader( false );
+        }).error( function( data, status ){
+            $scope.loader( true );
+            console.log( 'Error: ' + data + '|' + status );
+        });
     $scope.int = 0;
     $scope.render = function( int ){
         if( int === $scope.int ){
@@ -28,12 +39,14 @@ controller('main', function( $scope, $http ){
                 return "tens";
     }
     $scope.adventure = function( int ){
+        $scope.loader( true );
         $scope.int = int;
         $scope.colour = $scope.frames[ $scope.int ].colors.bg;
         if( int === 9 )
             $scope.enlarge = true;
         else
             $scope.enlarge = false;
+        $scope.loader( false );
     }
     $scope.choices = function( total, index ){
         if( total > 1 )

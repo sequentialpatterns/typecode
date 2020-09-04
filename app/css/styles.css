@@ -103,6 +103,15 @@
         grid-column-end: 12;
     }
     #copy.multicolumn p { margin-bottom: 10px; }
+    #loader {
+        background: #916F04;
+        border: none;
+        color: #FFC100;
+    }
+    #loader h1 {
+        position: relative;
+        top: 50%;
+    }
     #number { 
         font: normal 3rem Sans;
         grid-area: number;
@@ -247,6 +256,15 @@
         grid-column-end: 12;
     }
     #copy.multicolumn p { margin-bottom: 10px; }
+    #loader {
+        background: #916F04;
+        border: none;
+        color: #FFC100;
+    }
+    #loader h1 {
+        position: relative;
+        top: 50%;
+    }
     #number { 
         font: normal 4rem Sans;
         grid-area: number;
@@ -390,6 +408,15 @@
         grid-column-end: 12;
     }
     #copy.multicolumn p { margin-bottom: 20px; }
+    #loader {
+        background: #916F04;
+        border: none;
+        color: #FFC100;
+    }
+    #loader h1 {
+        position: relative;
+        top: 50%;
+    }
     #number { 
         font: normal 5.25rem Sans;
         grid-area: number;
@@ -526,6 +553,15 @@
         grid-column-end: 12;
     }
     #copy.multicolumn p { margin-bottom: 20px; }
+    #loader {
+        background: #916F04;
+        border: none;
+        color: #FFC100;
+    }
+    #loader h1 {
+        position: relative;
+        top: 50%;
+    }
     #number { 
         font: normal 5.95rem Sans;
         grid-area: number;
@@ -659,6 +695,15 @@
         grid-column-end: 12;
     }
     #copy.multicolumn p { margin-bottom: 20px; }
+    #loader {
+        background: #916F04;
+        border: none;
+        color: #FFC100;
+    }
+    #loader h1 {
+        position: relative;
+        top: 50%;
+    }
     #number { 
         font: normal 6.25rem Sans;
         grid-area: number;

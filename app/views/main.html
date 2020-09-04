@@ -1,6 +1,11 @@
 <!-- container begins -->
 <div id="container" ng-class="{ 'staircase': enlarge }" style="background: {{ colour }}">
 	<section 
+		id="loader" 
+		ng-class="{ 'hide': !loading }">
+		<h1>loading</h1>
+	</section>
+	<section 
 		ng-repeat="frame in frames" 
 		ng-class="render( $index )"
 		style="background: {{ frame.colors.bg }}; border: solid 1rem {{ frame.colors.text }}; color: {{ frame.colors.text }};">
