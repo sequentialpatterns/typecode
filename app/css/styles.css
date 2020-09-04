@@ -1,677 +1,676 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {	
-	body,
-	html { 
-		font-size: 16px; /* setting it here although common browser base is 16px */
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	} 
-	a { 
-	    bottom: -35px;
-		font: normal 1.55rem Sans;
-		height: 2.5rem;
-		padding: 0 0 0 20px;
-	    position: absolute;
-	}
-	a:hover { cursor: pointer; }
-	a.left { 
-		grid-area: option1; 
-		grid-column-start: 1;
-		grid-column-end: 4;
-	    grid-row-start: 5;
-	    grid-row-end: 5; 
-	    left: -35px;
-    	padding-right: 15px;
-	}
-	a.right {  
-		grid-area: option2; 
-		grid-column-start: 7;
-		grid-column-end: 12;
-	    grid-row-start: 5;
-	    grid-row-end: 5;  
-		right: -45px; 
-	}
-	h1 { 
-		font: normal 1.15rem Sans;
-		grid-area: title;
-		grid-column-start: 2;
-		grid-column-end: 12;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		letter-spacing: .15em;
-		margin: 0 auto;
-		text-align: center;
-		text-transform: uppercase;
-		width: 100%;
-	}
-	img { display: none; }
-	p { 
-		font: normal .65rem Mono;
-		grid-area: paragraph;
-		grid-column-start: 3;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		line-height: 1.46em;
-		margin: 0 0 20px;
-	}
-	section {
-		border: solid 1rem #000;
-		display: grid;
-		grid-template-columns: repeat( 12, 1fr );
-		grid-template-rows: repeat( 4, auto );
-		grid-template-areas:
-			"number number number number number number number number number number number number"
-			"title title title title title title title title title title title"
-			"paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
-			"option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
-		;
-	    height: 80%;
-	    margin: 0 auto;
-	    position: relative;
-	    transform: translateY( 6% );
-	    width: 80%;
-	}
-	#container {
-		clear: both;
-		height: 100vh;
-		overflow: auto;
-	    padding: 0;
-	    position: relative;
-	    margin: 0 auto;
-	}
-	#container.staircase { height: 100%; }
-	#container.staircase section {
-		height: 145%;
-		margin-bottom: 20px;
-	}
-	#container.staircase a { bottom: -30px; }
-	#container.staircase h1 { padding: 50px 0 20px; }
-	#copy {
-		grid-column-start: 2;
-		grid-column-end: 12;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		text-align: left;
-		vertical-align: text-top;
-	}
-	#copy.multicolumn { 
-		column-count: initial;
-		grid-column-end: 12;
-	}
-	#copy.multicolumn p { margin-bottom: 10px; }
-	#number { 
-		font: normal 3rem Sans;
-		grid-area: number;
-		grid-column-start: 12;
-		grid-column-end: 12;
-		grid-row-start: 1;
-		grid-row-end: 1;
-	    padding: 0 15px;
-	    position: absolute;
-	    right: -19px;
-	    top: -25px;
-	    width: 15px;
-	}
-	#number.one { 
-    	padding-left: 35px;
-		right: -25px; 
-	}
-	#number.tens { 
-	    padding: 0 15px;
-		right: -20px;
-	    width: 40px;
-	}
-	#number.number10 {
-	    padding-right: 20px;
-	    right: -16px;
-	    width: 40px;
-	}
-	.hide { display: none; }
+@media only screen and (max-width: 600px) { 
+    body,
+    html { 
+        font-size: 16px; /* setting it here although common browser base is 16px */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
+    a { 
+        bottom: -35px;
+        font: normal 1.55rem Sans;
+        height: 2.5rem;
+        padding: 0 0 0 20px;
+        position: absolute;
+    }
+    a:hover { cursor: pointer; }
+    a.left { 
+        grid-area: option1; 
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+        left: -35px;
+        padding-right: 15px;
+    }
+    a.right {  
+        grid-area: option2; 
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        right: -45px; 
+    }
+    h1 { 
+        font: normal 1.15rem Sans;
+        grid-area: title;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        letter-spacing: .15em;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    img { display: none; }
+    p { 
+        font: normal .65rem Mono;
+        grid-area: paragraph;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        line-height: 1.46em;
+        margin: 0 0 20px;
+    }
+    section {
+        border: solid 1rem #000;
+        display: grid;
+        grid-template-columns: repeat( 12, 1fr );
+        grid-template-rows: repeat( 4, auto );
+        grid-template-areas:
+        "number number number number number number number number number number number number"
+        "title title title title title title title title title title title"
+        "paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
+        "option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
+        ;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY( 6% );
+        width: 80%;
+    }
+    #container {
+        clear: both;
+        height: 100vh;
+        overflow: auto;
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container.staircase { height: 100%; }
+    #container.staircase section {
+        height: 145%;
+        margin-bottom: 20px;
+    }
+    #container.staircase a { bottom: -30px; }
+    #container.staircase h1 { padding: 50px 0 20px; }
+    #copy {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align: left;
+        vertical-align: text-top;
+    }
+    #copy.multicolumn { 
+        column-count: initial;
+        grid-column-end: 12;
+    }
+    #copy.multicolumn p { margin-bottom: 10px; }
+    #number { 
+        font: normal 3rem Sans;
+        grid-area: number;
+        grid-column-start: 12;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0 15px;
+        position: absolute;
+        right: -19px;
+        top: -25px;
+        width: 15px;
+    }
+    #number.one { 
+        padding-left: 35px;
+        right: -25px; 
+    }
+    #number.tens { 
+        padding: 0 15px;
+        right: -20px;
+        width: 40px;
+    }
+    #number.number10 {
+        padding-right: 20px;
+        right: -16px;
+        width: 40px;
+    }
+    .hide { display: none; }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {	
-	body,
-	html { 
-		font-size: 16px; /* setting it here although common browser base is 16px */
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	} 
-	a { 
-	    bottom: -25px;
-		font: normal 2rem Sans;
-		height: 2.5rem;
-		padding: 0 20px;
-	    position: absolute;
-	}
-	a:hover { cursor: pointer; }
-	a.left { 
-		grid-area: option1; 
-		grid-column-start: 1;
-		grid-column-end: 4;
-	    grid-row-start: 5;
-	    grid-row-end: 5; 
-	    left: -35px;
-	}
-	a.right {  
-		grid-area: option2; 
-		grid-column-start: 9;
-		grid-column-end: 12;
-	    grid-row-start: 5;
-	    grid-row-end: 5;  
-		right: -80px; 
-	}
-	h1 { 
-		font: normal 2rem Sans;
-		grid-area: title;
-		grid-column-start: 2;
-		grid-column-end: 12;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		letter-spacing: .15em;
-		margin: 0 auto;
-		text-align: center;
-		text-transform: uppercase;
-		width: 100%;
-	}
-	img {
-		grid-area: image;
-		grid-column-start: 7;
-		grid-column-end: 10;
-		grid-row-start: 3;
-		grid-row-end: 3;
-	    max-width: 100%;
-	    min-height: 200px;
-	    min-width: 200px;
-	    transform: translate( 15px, -30px ); 
-	}
-	p { 
-		font: normal .55rem Mono;
-		grid-area: paragraph;
-		grid-column-start: 3;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		line-height: 1.46em;
-		margin: 0 0 20px;
-	}
-	section {
-		border: solid 1rem #000;
-		display: grid;
-		grid-template-columns: repeat( 12, 1fr );
-		grid-template-rows: repeat( 4, auto );
-		grid-template-areas:
-			"number number number number number number number number number number number number"
-			"title title title title title title title title title title title"
-			"paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
-			"option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
-		;
-	    height: 80%;
-	    margin: 0 auto;
-	    position: relative;
-	    transform: translateY( 6% );
-	    width: 90%;
-	}
-	#container {
-		clear: both;
-		height: 100vh;
-		overflow: auto;
-	    padding: 0;
-	    position: relative;
-	    margin: 0 auto;
-	}
-	#container.staircase { height: 100%; }
-	#container.staircase section {
-		height: 145%;
-		margin-bottom: 20px;
-	}
-	#container.staircase a { bottom: -30px; }
-	#copy {
-		grid-column-start: 2;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		text-align: left;
-		vertical-align: text-top;
-	}
-	#copy.multicolumn { 
-		column-count: 2;
-		column-gap: 40px;
-		grid-column-end: 12;
-	}
-	#copy.multicolumn p { margin-bottom: 10px; }
-	#number { 
-		font: normal 4rem Sans;
-		grid-area: number;
-		grid-column-start: 12;
-		grid-column-end: 12;
-		grid-row-start: 1;
-		grid-row-end: 1;
-	    padding: 0 0 0 30px;
-	    position: absolute;
-	    right: -25px;
-	    top: -30px;
-	    width: 40px;
-	}
-	#number.one { 
-    	padding-left: 35px;
-		right: -30px; 
-	}
-	#number.tens { 
-	    padding: 0 15px;
-		right: -20px;
-	    width: 40px;
-	}
-	#number.number10 {
-	    padding-right: 20px;
-	    right: -16px;
-	    width: 40px;
-	}
-	.hide { display: none; }
+@media only screen and (min-width: 600px) { 
+    body,
+    html { 
+        font-size: 16px; /* setting it here although common browser base is 16px */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
+    a { 
+        bottom: -25px;
+        font: normal 2rem Sans;
+        height: 2.5rem;
+        padding: 0 20px;
+        position: absolute;
+    }
+    a:hover { cursor: pointer; }
+    a.left { 
+        grid-area: option1; 
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+        left: -35px;
+    }
+    a.right {  
+        grid-area: option2; 
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        right: -80px; 
+    }
+    h1 { 
+        font: normal 2rem Sans;
+        grid-area: title;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        letter-spacing: .15em;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    img {
+        grid-area: image;
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        max-width: 100%;
+        min-height: 200px;
+        min-width: 200px;
+        transform: translate( 15px, -30px ); 
+    }
+    p { 
+        font: normal .55rem Mono;
+        grid-area: paragraph;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        line-height: 1.46em;
+        margin: 0 0 20px;
+    }
+    section {
+        border: solid 1rem #000;
+        display: grid;
+        grid-template-columns: repeat( 12, 1fr );
+        grid-template-rows: repeat( 4, auto );
+        grid-template-areas:
+        "number number number number number number number number number number number number"
+        "title title title title title title title title title title title"
+        "paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
+        "option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
+        ;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY( 6% );
+        width: 90%;
+    }
+    #container {
+        clear: both;
+        height: 100vh;
+        overflow: auto;
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container.staircase { height: 100%; }
+    #container.staircase section {
+        height: 145%;
+        margin-bottom: 20px;
+    }
+    #container.staircase a { bottom: -30px; }
+    #copy {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align: left;
+        vertical-align: text-top;
+    }
+    #copy.multicolumn { 
+        column-count: 2;
+        column-gap: 40px;
+        grid-column-end: 12;
+    }
+    #copy.multicolumn p { margin-bottom: 10px; }
+    #number { 
+        font: normal 4rem Sans;
+        grid-area: number;
+        grid-column-start: 12;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0 0 0 30px;
+        position: absolute;
+        right: -25px;
+        top: -30px;
+        width: 40px;
+    }
+    #number.one { 
+        padding-left: 35px;
+        right: -30px; 
+    }
+    #number.tens { 
+        padding: 0 15px;
+        right: -20px;
+        width: 40px;
+    }
+    #number.number10 {
+        padding-right: 20px;
+        right: -16px;
+        width: 40px;
+    }
+    .hide { display: none; }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {	
-	body,
-	html { 
-		font-size: 16px; /* setting it here although common browser base is 16px */
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	} 
-	a { 
-	    bottom: -23px;
-		font: normal 2.5rem Sans;
-		height: 2.5rem;
-		padding: 0 20px;
-	    position: absolute;
-	}
-	a:hover { cursor: pointer; }
-	a.left { 
-		grid-area: option1; 
-		grid-column-start: 1;
-		grid-column-end: 4;
-	    grid-row-start: 5;
-	    grid-row-end: 5; 
-	    left: -35px;
-	}
-	a.right {  
-		grid-area: option2; 
-		grid-column-start: 9;
-		grid-column-end: 12;
-	    grid-row-start: 5;
-	    grid-row-end: 5;  
-		right: -90px; 
-	}
-	h1 { 
-		font: normal 2.25rem Sans;
-		grid-area: title;
-		grid-column-start: 2;
-		grid-column-end: 12;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		letter-spacing: .15em;
-		margin: 0 auto;
-		text-align: center;
-		text-transform: uppercase;
-		width: 100%;
-	}
-	img {
-		grid-area: image;
-		grid-column-start: 7;
-		grid-column-end: 10;
-		grid-row-start: 3;
-		grid-row-end: 3;
-	    max-width: 100%;
-	    min-height: 250px;
-	    min-width: 250px;
-	    transform: translate( 15px, -30px ); 
-	}
-	p { 
-		font: normal 1rem Mono;
-		grid-area: paragraph;
-		grid-column-start: 3;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		line-height: 1.46em;
-		margin: 0 0 20px;
-	}
-	section {
-		border: solid 1rem #000;
-		display: grid;
-		grid-template-columns: repeat( 12, 1fr );
-		grid-template-rows: repeat( 4, auto );
-		grid-template-areas:
-			"number number number number number number number number number number number number"
-			"title title title title title title title title title title title"
-			"paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
-			"option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
-		;
-	    height: 80%;
-	    margin: 0 auto;
-	    position: relative;
-	    transform: translateY( 10% );
-	    width: 80%;
-	}
-	#container {
-		clear: both;
-		height: 100vh;
-		overflow: auto;
-	    padding: 0;
-	    position: relative;
-	    margin: 0 auto;
-	}
-	#container.staircase { height: 100%; }
-	#container.staircase section {
-		height: 125%;
-		margin-bottom: 20px;
-	}
-	#container.staircase a { bottom: -20px; }
-	#copy {
-		grid-column-start: 2;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		text-align: left;
-		vertical-align: text-top;
-	}
-	#copy.multicolumn { 
-		column-count: 2;
-		column-gap: 40px;
-		grid-column-end: 12;
-	}
-	#copy.multicolumn p { margin-bottom: 20px; }
-	#number { 
-		font: normal 5.25rem Sans;
-		grid-area: number;
-		grid-column-start: 12;
-		grid-column-end: 12;
-		grid-row-start: 1;
-		grid-row-end: 1;
-	    padding: 0 0 0 30px;
-	    position: absolute;
-	    right: -30px;
-	    top: -35px;
-	    width: 60px;
-	}
-	#number.one { right: -43px; }
-	#number.tens { 
-	    padding: 0 15px;
-		right: -70px;
-	    width: 110px;
-	}
-	.hide { display: none; }
+@media only screen and (min-width: 768px) { 
+    body,
+    html { 
+        font-size: 16px; /* setting it here although common browser base is 16px */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
+    a { 
+        bottom: -23px;
+        font: normal 2.5rem Sans;
+        height: 2.5rem;
+        padding: 0 20px;
+        position: absolute;
+    }
+    a:hover { cursor: pointer; }
+    a.left { 
+        grid-area: option1; 
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+        left: -35px;
+    }
+    a.right {  
+        grid-area: option2; 
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        right: -90px; 
+    }
+    h1 { 
+        font: normal 2.25rem Sans;
+        grid-area: title;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        letter-spacing: .15em;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    img {
+        grid-area: image;
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        max-width: 100%;
+        min-height: 250px;
+        min-width: 250px;
+        transform: translate( 15px, -30px ); 
+    }
+    p { 
+        font: normal 1rem Mono;
+        grid-area: paragraph;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        line-height: 1.46em;
+        margin: 0 0 20px;
+    }
+    section {
+        border: solid 1rem #000;
+        display: grid;
+        grid-template-columns: repeat( 12, 1fr );
+        grid-template-rows: repeat( 4, auto );
+        grid-template-areas:
+        "number number number number number number number number number number number number"
+        "title title title title title title title title title title title"
+        "paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
+        "option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
+        ;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY( 10% );
+        width: 80%;
+    }
+    #container {
+        clear: both;
+        height: 100vh;
+        overflow: auto;
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container.staircase { height: 100%; }
+    #container.staircase section {
+        height: 125%;
+        margin-bottom: 20px;
+    }
+    #container.staircase a { bottom: -20px; }
+    #copy {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align: left;
+        vertical-align: text-top;
+    }
+    #copy.multicolumn { 
+        column-count: 2;
+        column-gap: 40px;
+        grid-column-end: 12;
+    }
+    #copy.multicolumn p { margin-bottom: 20px; }
+    #number { 
+        font: normal 5.25rem Sans;
+        grid-area: number;
+        grid-column-start: 12;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0 0 0 30px;
+        position: absolute;
+        right: -30px;
+        top: -35px;
+        width: 60px;
+    }
+    #number.one { right: -43px; }
+    #number.tens { 
+        padding: 0 15px;
+        right: -70px;
+        width: 110px;
+    }
+    .hide { display: none; }
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {	
-	body,
-	html { 
-		font-size: 16px; /* setting it here although common browser base is 16px */
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	} 
-	a { 
-	    bottom: -16px;
-		font: normal 3rem Sans;
-		height: 2.5rem;
-		padding: 0 20px;
-	    position: absolute;
-	}
-	a:hover { cursor: pointer; }
-	a.left { 
-		grid-area: option1; 
-		grid-column-start: 1;
-		grid-column-end: 4;
-	    grid-row-start: 5;
-	    grid-row-end: 5; 
-	    left: -35px;
-	}
-	a.right {  
-		grid-area: option2; 
-		grid-column-start: 9;
-		grid-column-end: 12;
-	    grid-row-start: 5;
-	    grid-row-end: 5;  
-		right: -110px; 
-	}
-	h1 { 
-		font: normal 3rem Sans;
-		grid-area: title;
-		grid-column-start: 2;
-		grid-column-end: 12;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		letter-spacing: .15em;
-		margin: 0 auto;
-		text-align: center;
-		text-transform: uppercase;
-		width: 100%;
-	}
-	img {
-		grid-area: image;
-		grid-column-start: 7;
-		grid-column-end: 10;
-		grid-row-start: 3;
-		grid-row-end: 3;
-	    max-width: 115%;
-	    min-height: 305px;
-	    min-width: 305px;
-	    transform: translate( 30px, -50px ); 
-	}
-	p { 
-		font: normal 1.25rem Mono;
-		grid-area: paragraph;
-		grid-column-start: 3;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		line-height: 1.46em;
-		margin: 0 0 20px;
-	}
-	section {
-		border: solid 1rem #000;
-		display: grid;
-		grid-template-columns: repeat( 12, 1fr );
-		grid-template-rows: repeat( 4, auto );
-		grid-template-areas:
-			"number number number number number number number number number number number number"
-			"title title title title title title title title title title title"
-			"paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
-			"option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
-		;
-	    height: 80%;
-	    margin: 0 auto;
-	    position: relative;
-	    transform: translateY( 10% );
-	    width: 80%;
-	}
-	#container {
-		clear: both;
-		height: 100vh;
-		overflow: auto;
-	    padding: 0;
-	    position: relative;
-	    margin: 0 auto;
-	}
-	#container.staircase { height: 100%; }
-	#container.staircase section {
-		height: 115%;
-		margin-bottom: 20px;
-	}
-	#container.staircase h1 { padding: 100px 0 30px; }
-	#container.staircase a { bottom: -15px; }
-	#copy {
-		grid-column-start: 2;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		text-align: left;
-		vertical-align: text-top;
-	}
-	#copy.multicolumn { 
-		column-count: 2;
-		column-gap: 40px;
-		grid-column-end: 12;
-	}
-	#copy.multicolumn p { margin-bottom: 20px; }
-	#number { 
-		font: normal 5.95rem Sans;
-		grid-area: number;
-		grid-column-start: 12;
-		grid-column-end: 12;
-		grid-row-start: 1;
-		grid-row-end: 1;
-	    padding: 0 0 0 30px;
-	    position: absolute;
-	    right: -30px;
-	    top: -35px;
-	    width: 60px;
-	}
-	#number.one { right: -43px; }
-	#number.tens { 
-	    padding: 0 15px;
-		right: -70px;
-	    width: 110px;
-	}
-	.hide { display: none; }
+@media only screen and (min-width: 992px) { 
+    body,
+    html { 
+        font-size: 16px; /* setting it here although common browser base is 16px */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
+    a { 
+        bottom: -16px;
+        font: normal 3rem Sans;
+        height: 2.5rem;
+        padding: 0 20px;
+        position: absolute;
+    }
+    a:hover { cursor: pointer; }
+    a.left { 
+        grid-area: option1; 
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+        left: -35px;
+    }
+    a.right {  
+        grid-area: option2; 
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        right: -110px; 
+    }
+    h1 { 
+        font: normal 3rem Sans;
+        grid-area: title;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        letter-spacing: .15em;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    img {
+        grid-area: image;
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        max-width: 115%;
+        min-height: 305px;
+        min-width: 305px;
+        transform: translate( 30px, -50px ); 
+    }
+    p { 
+        font: normal 1.25rem Mono;
+        grid-area: paragraph;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        line-height: 1.46em;
+        margin: 0 0 20px;
+    }
+    section {
+        border: solid 1rem #000;
+        display: grid;
+        grid-template-columns: repeat( 12, 1fr );
+        grid-template-rows: repeat( 4, auto );
+        grid-template-areas:
+        "number number number number number number number number number number number number"
+        "title title title title title title title title title title title"
+        "paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
+        "option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
+        ;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY( 10% );
+        width: 80%;
+    }
+    #container {
+        clear: both;
+        height: 100vh;
+        overflow: auto;
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container.staircase { height: 100%; }
+    #container.staircase section {
+        height: 115%;
+        margin-bottom: 20px;
+    }
+    #container.staircase h1 { padding: 100px 0 30px; }
+    #container.staircase a { bottom: -15px; }
+    #copy {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align: left;
+        vertical-align: text-top;
+    }
+    #copy.multicolumn { 
+        column-count: 2;
+        column-gap: 40px;
+        grid-column-end: 12;
+    }
+    #copy.multicolumn p { margin-bottom: 20px; }
+    #number { 
+        font: normal 5.95rem Sans;
+        grid-area: number;
+        grid-column-start: 12;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0 0 0 30px;
+        position: absolute;
+        right: -30px;
+        top: -35px;
+        width: 60px;
+    }
+    #number.one { right: -43px; }
+    #number.tens { 
+        padding: 0 15px;
+        right: -70px;
+        width: 110px;
+    }
+    .hide { display: none; }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {	
-	body,
-	html { 
-		font-size: 16px; /* setting it here although common browser base is 16px */
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	} 
-	a { 
-	    bottom: -30px;
-		font: normal 3rem Sans;
-		height: 3.5rem;
-		padding: 0 20px;
-	    position: absolute;
-	}
-	a:hover { cursor: pointer; }
-	a.left { 
-		grid-area: option1; 
-		grid-column-start: 1;
-		grid-column-end: 4;
-	    grid-row-start: 5;
-	    grid-row-end: 5; 
-	    left: -35px;
-	}
-	a.right {  
-		grid-area: option2; 
-		grid-column-start: 9;
-		grid-column-end: 12;
-	    grid-row-start: 5;
-	    grid-row-end: 5;  
-		right: -48%; 
-	}
-	h1 { 
-		font: normal 3.75rem Sans;
-		grid-area: title;
-		grid-column-start: 2;
-		grid-column-end: 12;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		letter-spacing: .15em;
-		text-transform: uppercase;
-		width: 100%;
-	}
-	img {
-		grid-area: image;
-		grid-column-start: 7;
-		grid-column-end: 10;
-		grid-row-start: 3;
-		grid-row-end: 3;
-	    max-width: 100%;
-	    transform: translate( 30px, -50px );
-	    width: 100%; 
-	}
-	p { 
-		font: normal 1.25rem Mono;
-		grid-area: paragraph;
-		grid-column-start: 3;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		line-height: 1.46em;
-		margin: 0 0 20px;
-	}
-	section {
-		border: solid 1rem #000;
-		display: grid;
-		/*grid-template-columns: 12.45% auto 7.27% 7.27% 7.27% 7.27% auto 7.27% 7.27% 7.27% 7.27% 12.45%;*/
-		grid-template-columns: repeat( 12, 1fr );
-		grid-template-rows: repeat( 4, auto );
-		grid-template-areas:
-			"number number number number number number number number number number number number"
-			"title title title title title title title title title title title"
-			"paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
-			"option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
-		;
-	    height: 80%;
-	    margin: 0 auto;
-	    position: relative;
-	    transform: translateY( 10% );
-	    width: 80%;
-	}
-	#container {
-		clear: both;
-		height: 100vh;
-		overflow: auto;
-	    padding: 0;
-	    position: relative;
-	    margin: 0 auto;
-	}
-	#container.staircase { height: 100%; }
-	#container.staircase section {
-		height: 115%;
-		margin-bottom: 20px;
-	}
-	#container.staircase h1 { padding: 100px 0 30px; }
-	#container.staircase a { bottom: -30px; }
-	#copy {
-		grid-column-start: 2;
-		grid-column-end: 7;
-		grid-row-start: 3;
-		grid-row-end: 3;
-		text-align: left;
-		vertical-align: text-top;
-	}
-	#copy.multicolumn { 
-		column-count: 2;
-		column-gap: 40px;
-		grid-column-end: 12;
-	}
-	#copy.multicolumn p { margin-bottom: 20px; }
-	#number { 
-		font: normal 6.25rem Sans;
-		grid-area: number;
-		grid-column-start: 12;
-		grid-column-end: 12;
-		grid-row-start: 1;
-		grid-row-end: 1;
-	    padding: 0 0 0 30px;
-	    position: absolute;
-	    right: -30px;
-	    top: -45px;
-	    width: 60px;
-	}
-	#number.one { right: -40px; }
-	#number.tens { 
-	    padding: 0 15px;
-		right: -70px;
-	    width: 110px;
-	}
-	.hide { display: none; }
+@media only screen and (min-width: 1200px) {    
+    body,
+    html { 
+        font-size: 16px; /* setting it here although common browser base is 16px */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
+    a { 
+        bottom: -30px;
+        font: normal 3rem Sans;
+        height: 3.5rem;
+        padding: 0 20px;
+        position: absolute;
+    }
+    a:hover { cursor: pointer; }
+    a.left { 
+        grid-area: option1; 
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+        left: -35px;
+    }
+    a.right {  
+        grid-area: option2; 
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        right: -48%; 
+    }
+    h1 { 
+        font: normal 3.75rem Sans;
+        grid-area: title;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    img {
+        grid-area: image;
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        max-width: 100%;
+        transform: translate( 30px, -50px );
+        width: 100%; 
+    }
+    p { 
+        font: normal 1.25rem Mono;
+        grid-area: paragraph;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        line-height: 1.46em;
+        margin: 0 0 20px;
+    }
+    section {
+        border: solid 1rem #000;
+        display: grid;
+        grid-template-columns: repeat( 12, 1fr );
+        grid-template-rows: repeat( 4, auto );
+        grid-template-areas:
+        "number number number number number number number number number number number number"
+        "title title title title title title title title title title title"
+        "paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
+        "option1 option1 option1 option1 option1 option2 option2 option2 option2 option2 option2"
+        ;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY( 10% );
+        width: 80%;
+    }
+    #container {
+        clear: both;
+        height: 100vh;
+        overflow: auto;
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container.staircase { height: 100%; }
+    #container.staircase section {
+        height: 115%;
+        margin-bottom: 20px;
+    }
+    #container.staircase h1 { padding: 100px 0 30px; }
+    #container.staircase a { bottom: -30px; }
+    #copy {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align: left;
+        vertical-align: text-top;
+    }
+    #copy.multicolumn { 
+        column-count: 2;
+        column-gap: 40px;
+        grid-column-end: 12;
+    }
+    #copy.multicolumn p { margin-bottom: 20px; }
+    #number { 
+        font: normal 6.25rem Sans;
+        grid-area: number;
+        grid-column-start: 12;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0 0 0 30px;
+        position: absolute;
+        right: -30px;
+        top: -45px;
+        width: 60px;
+    }
+    #number.one { right: -40px; }
+    #number.tens { 
+        padding: 0 15px;
+        right: -70px;
+        width: 110px;
+    }
+    .hide { display: none; }
 }
