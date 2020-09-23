@@ -1,18 +1,4 @@
-# Type/Code frontend dev exercise
-
-## Instructions
-
-For this exercise, you are tasked with implementing a choose-your-own-adventure style app, following the UI designs (which can be found under `designs/`) and the functional requirements as detailed further below.
-
-A minimal starter setup for a Node-based app has been included to get you started. _You may build your solution based off of this, but you don't have to-- feel free to scrap it and start from scratch if desired. It's up to you what tools/frameworks you use._
-
-Work on your implementation directly in this directory, and submit it to us by zipping it up and sending it to [lev@typecode.com](mailto:lev@typecode.com) _and_ [ian@typecode.com](mailto:ian@typecode.com), or by sharing a _private_ repository on Github with [LevKanter](https://github.com/LevKanter) and [ianlord](https://github.com/ianlord). As part of your solution, please fill in the "Running the dev environment" section in this README with instructions for spinning up the project (including installing any dependencies, etc). If you do submit a .zip, please omit any third-party installable dependencies (such as `node_modules/`).
-
-You're not required to do the exercise in one sitting-- you can work on it over the course of multiple sittings if you want. We expect it to take approximately 6-12 hours, and will likely be curious, after reviewing your solution, how long it took you and which parts were most time consuming (please keep track of your time).
-
-### Functional requirements
-
-This exercise should run as a single page app in a browser. The only browser you're required to support is the latest version of Google Chrome. The included UI designs show examples of what the UI should look like at desktop viewport sizes, but we are looking for you to reinterpret the layout as you see fit, so that it stays sensible on smaller viewport sizes.
+# Functional requirements
 
 The app consists of a set of frames that the user navigates through via buttons. Only one frame is visible to the user at a time, and the frame always fills the entire viewport. If the contents of a frame are taller than the height of viewport, the frame's height should increase past the fold to fit all of its content, and the user should be able to scroll the page to see the entire frame. If the frame's contents are shorter than the viewport height, the frame should be exactly as tall as the viewport.
 
